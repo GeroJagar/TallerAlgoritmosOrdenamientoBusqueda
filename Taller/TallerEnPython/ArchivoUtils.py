@@ -66,7 +66,7 @@ class ArchivoUtils:
 
     @staticmethod
     def crear_carpeta_algoritmo(algoritmo):
-        ruta = os.path.join("src", "main", "resultados", algoritmo)
+        ruta = os.path.join("Taller", "TallerEnPython", "resultados", algoritmo)
         if not os.path.exists(ruta):
             os.makedirs(ruta)
         return ruta
