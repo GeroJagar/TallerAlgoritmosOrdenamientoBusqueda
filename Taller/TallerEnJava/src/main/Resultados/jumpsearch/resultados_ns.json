@@ -1,0 +1,5 @@
+[
+  {"algoritmo": "jumpsearch", "archivo": "archivo_10k.txt", "tiempoNs": 37400},
+  {"algoritmo": "jumpsearch", "archivo": "archivo_100k.txt", "tiempoNs": 114000},
+  {"algoritmo": "jumpsearch", "archivo": "archivo_1M.txt", "tiempoNs": 161000}
+]

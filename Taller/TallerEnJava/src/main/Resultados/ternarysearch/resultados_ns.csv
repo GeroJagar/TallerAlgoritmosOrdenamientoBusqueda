@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ns)
+ternarysearch,archivo_10k.txt,4300
+ternarysearch,archivo_100k.txt,9600
+ternarysearch,archivo_1M.txt,9500

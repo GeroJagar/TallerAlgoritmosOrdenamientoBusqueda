@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ms)
+Heap Sort,archivo_10k.txt,1.7673
+Heap Sort,archivo_100k.txt,9.9062
+Heap Sort,archivo_1M.txt,113.7963

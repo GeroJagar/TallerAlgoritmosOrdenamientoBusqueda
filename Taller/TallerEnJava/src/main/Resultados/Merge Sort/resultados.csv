@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ms)
+Merge Sort,archivo_10k.txt,2.4212
+Merge Sort,archivo_100k.txt,11.2729
+Merge Sort,archivo_1M.txt,156.5698

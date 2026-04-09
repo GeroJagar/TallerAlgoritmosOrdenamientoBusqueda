@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ms)
+Shaker,archivo_10k.txt,44.3953
+Shaker,archivo_100k.txt,6345.684
+Shaker,archivo_1M.txt,599633.5176

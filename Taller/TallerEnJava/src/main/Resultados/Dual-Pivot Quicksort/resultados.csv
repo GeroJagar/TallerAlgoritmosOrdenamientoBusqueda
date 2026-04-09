@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ms)
+Dual-Pivot Quicksort,archivo_10k.txt,1.7264
+Dual-Pivot Quicksort,archivo_100k.txt,5.6827
+Dual-Pivot Quicksort,archivo_1M.txt,66.198

@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ns)
+binarysearch,archivo_10k.txt,3900
+binarysearch,archivo_100k.txt,5000
+binarysearch,archivo_1M.txt,5300

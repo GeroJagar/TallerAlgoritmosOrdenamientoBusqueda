@@ -1,0 +1,5 @@
+[
+  {"algoritmo": "ternarysearch", "archivo": "archivo_10k.txt", "tiempoNs": 4300},
+  {"algoritmo": "ternarysearch", "archivo": "archivo_100k.txt", "tiempoNs": 9600},
+  {"algoritmo": "ternarysearch", "archivo": "archivo_1M.txt", "tiempoNs": 9500}
+]

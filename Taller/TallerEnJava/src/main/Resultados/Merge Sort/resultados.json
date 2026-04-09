@@ -1,0 +1,5 @@
+[
+  {"algoritmo": "Merge Sort", "archivo": "archivo_10k.txt", "tiempoMs": 2.4212},
+  {"algoritmo": "Merge Sort", "archivo": "archivo_100k.txt", "tiempoMs": 11.2729},
+  {"algoritmo": "Merge Sort", "archivo": "archivo_1M.txt", "tiempoMs": 156.5698}
+]

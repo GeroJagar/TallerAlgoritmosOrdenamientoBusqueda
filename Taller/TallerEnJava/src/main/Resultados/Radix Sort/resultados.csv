@@ -1,0 +1,4 @@
+Algoritmo,Archivo,Tiempo(ms)
+Radix Sort,archivo_10k.txt,3.1195
+Radix Sort,archivo_100k.txt,10.9988
+Radix Sort,archivo_1M.txt,76.561
