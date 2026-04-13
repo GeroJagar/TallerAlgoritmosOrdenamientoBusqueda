@@ -1,4 +1,4 @@
 Algoritmo,Archivo,Tiempo(ns)
-jumpsearch,archivo_10k.txt,37400
-jumpsearch,archivo_100k.txt,114000
-jumpsearch,archivo_1M.txt,161000
+jumpsearch,archivo_10k.txt,2694
+jumpsearch,archivo_100k.txt,1192
+jumpsearch,archivo_1M.txt,3563
