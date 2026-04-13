@@ -2,28 +2,36 @@ package com.analisis.algoritmos;
 
 public class TernarySearch {
 
-     public static void probarArchivo(String nombreArchivo, String algoritmo) {
+    public static void probarArchivo(String nombreArchivo, String algoritmo) {
 
         System.out.println("\nProcesando: " + nombreArchivo);
 
-        // 🔹 Leer archivo
         int[] datos = ArchivoUtils.leerArchivo(nombreArchivo);
 
         DualPivotQuicksort.dualPivotQuickSort(datos, 0, datos.length - 1);
 
-        // 🔹 Medir SOLO la búsqueda
+        int resultado = -1;
+
+        int repeticiones = 100;
+
+        for (int i = 0; i < 50; i++) {
+            findMinIndex(datos);
+        }
+
         long inicio = System.nanoTime();
 
-        int resultado = findMinIndex(datos);
+        for (int i = 0; i < repeticiones; i++) {
+            resultado = findMinIndex(datos);
+        }
 
         long fin = System.nanoTime();
 
-        long tiempoNs = fin - inicio;
+        long tiempoPromedioNs = (fin - inicio) / repeticiones;
 
-        System.out.println("Tiempo (ns): " + tiempoNs);
+        System.out.println("Tiempo promedio (ns): " + tiempoPromedioNs);
         System.out.println("Índice mínimo encontrado: " + resultado);
 
-        ArchivoUtils.agregarResultadoNs(algoritmo, nombreArchivo, tiempoNs);
+        ArchivoUtils.agregarResultadoNs(algoritmo, nombreArchivo, tiempoPromedioNs);
     }
 
     public static void main(String[] args) {
