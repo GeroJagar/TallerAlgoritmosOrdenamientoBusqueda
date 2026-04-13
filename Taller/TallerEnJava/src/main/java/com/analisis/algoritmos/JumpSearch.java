@@ -2,33 +2,42 @@ package com.analisis.algoritmos;
 
 public class JumpSearch {
 
-    public static void probarArchivo(String nombreArchivo, int numero, String algoritmo) {
+public static void probarArchivo(String nombreArchivo, int numero, String algoritmo) {
 
-        System.out.println("\nProcesando: " + nombreArchivo);
+    System.out.println("\nProcesando: " + nombreArchivo);
 
-        int[] datos = ArchivoUtils.leerArchivo(nombreArchivo);
+    int[] datos = ArchivoUtils.leerArchivo(nombreArchivo);
 
-        // 🔥 IMPORTANTE: Jump Search necesita arreglo ordenado
-        DualPivotQuicksort.dualPivotQuickSort(datos, 0, datos.length - 1);
+    DualPivotQuicksort.dualPivotQuickSort(datos, 0, datos.length - 1);
 
-        long inicio = System.nanoTime();
+    int resultado = -1;
 
-        int resultado = jumpSearch(datos, numero);
+    int repeticiones = 100;
 
-        long fin = System.nanoTime();
-
-        long tiempoNs = fin - inicio;
-
-        System.out.println("Tiempo (ns): " + tiempoNs);
-
-        if (resultado != -1) {
-            System.out.println("Número encontrado en posición: " + resultado);
-        } else {
-            System.out.println("Número NO encontrado");
-        }
-
-        ArchivoUtils.agregarResultadoNs(algoritmo, nombreArchivo, tiempoNs);
+    for (int i = 0; i < 50; i++) {
+        jumpSearch(datos, numero);
     }
+
+    long inicio = System.nanoTime();
+
+    for (int i = 0; i < repeticiones; i++) {
+        resultado = jumpSearch(datos, numero);
+    }
+
+    long fin = System.nanoTime();
+
+    long tiempoPromedioNs = (fin - inicio) / repeticiones;
+
+    System.out.println("Tiempo promedio (ns): " + tiempoPromedioNs);
+
+    if (resultado != -1) {
+        System.out.println("Número encontrado en posición: " + resultado);
+    } else {
+        System.out.println("Número NO encontrado");
+    }
+
+    ArchivoUtils.agregarResultadoNs(algoritmo, nombreArchivo, tiempoPromedioNs);
+}
 
     public static void main(String[] args) {
 
